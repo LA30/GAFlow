@@ -40,7 +40,7 @@ pip3 install natten -f https://shi-labs.com/natten/wheels/cu102/torch1.11/index.
 
 ## Usage
 
-1. The trained weights are available on [GoogleDrive](). Put `*.pth` files into folder `./weights`.
+1. The trained weights are available on [GoogleDrive](https://drive.google.com/drive/folders/1_g3HWm6asi8CXEQrhJE2kv_PIXGbOAkv?usp=sharing). Put `*.pth` files into folder `./weights`.
 
 2. Download [Sintel](http://sintel.is.tue.mpg.de/) and [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow) dataset, and set the root path of each class in `./core/datasets.py`.
 

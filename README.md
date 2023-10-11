@@ -4,7 +4,7 @@
 <h4 align="center">1. Megvii Research &emsp; 2. Group 42 &emsp; 3.Beijing Jiaotong University</h4>
 <h4 align="center">4. University of Electronic Science and Technology of China</h4>
 
-This project provides the official implementation of '[**GAFlow: Incorporating Gaussian Attention into Optical Flow**]()'.
+This project provides the official implementation of '[**GAFlow: Incorporating Gaussian Attention into Optical Flow**](https://openaccess.thecvf.com/content/ICCV2023/papers/Luo_GAFlow_Incorporating_Gaussian_Attention_into_Optical_Flow_ICCV_2023_paper.pdf)'.
 
 ## Abstract
 Optical flow, or the estimation of motion fields from image sequences, is one of the fundamental problems in computer vision. Unlike most pixel-wise tasks that aim at achieving consistent representations of the same category, optical flow raises extra demands for obtaining local discrimination and smoothness, which yet is not fully explored by existing approaches. In this paper, we push Gaussian Attention (GA) into the optical flow models to accentuate local properties during representation learning and enforce the motion affinity during matching. Specifically, we introduce a novel Gaussian-Constrained Layer (GCL) which can be easily plugged into existing Transformer blocks to highlight the local neighborhood that contains fine-grained structural information. Moreover, for reliable motion analysis, we provide a new Gaussian-Guided Attention Module (GGAM) which not only inherits properties from Gaussian distribution to instinctively revolve around the neighbor fields of each point but also is empowered to put the emphasis on contextually related regions during matching. Our fully-equipped model, namely Gaussian Attention Flow network (GAFlow), naturally incorporates a series of novel Gaussian-based modules into the conventional optical flow framework for reliable motion analysis. Extensive experiments on standard optical flow datasets consistently demonstrate the exceptional performance of the proposed approach in terms of both generalization ability evaluation and online benchmark testing. 
@@ -49,6 +49,21 @@ pip3 install natten -f https://shi-labs.com/natten/wheels/cu102/torch1.11/index.
 ```Shell
 ./eval_sintel_kitti.sh
 ```
+
+# Citation
+
+If you think this work is helpful, please cite
+```
+@inproceedings{luo2023gaflow,
+  title={Gaflow: Incorporating gaussian attention into optical flow},
+  author={Luo, Ao and Yang, Fan and Li, Xin and Nie, Lang and Lin, Chunyu and Fan, Haoqiang and Liu, Shuaicheng},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={9642--9651},
+  year={2023}
+}
+```
+
+If you have any questions, please contact me at (aoluo_uestc@hotmail.com).
 
 ## Acknowledgement
 
